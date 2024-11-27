@@ -1,0 +1,12 @@
+.card {
+    padding: 20px; 
+    width: 90%; 
+    max-width: 500px; 
+    margin-left: 400px; 
+}
+
+.card-header {
+    font-weight: bold; 
+    border-bottom: 1px solid black; 
+    background-color: #07c182;
+}

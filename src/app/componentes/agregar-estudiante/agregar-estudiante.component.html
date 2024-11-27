@@ -1,0 +1,85 @@
+<div class="card">
+    <div class="card-header">
+        AGREGAR ESTUDIANTE
+    </div>
+
+    <div class="card-body">
+        <form [formGroup]="formularioDeEstudiantes" (ngSubmit)="enviarDatos()">
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" formControlName="nombre" name="" id="" aria-describedby="helpId" placeholder=""/>
+            </div>
+            
+            <div class="mb-3">
+                <label for="" class="form-label">Edad:</label>
+                <input type="text" class="form-control" formControlName="edad" name="" id="" aria-describedby="helpId" placeholder=""/>
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Correo:</label>
+                <input type="text" class="form-control" formControlName="correo" name="" id="" aria-describedby="helpId" placeholder=""/>
+            </div>
+
+            <div class="mb-3">
+                <label for="carrera" class="form-label">Carrera:</label>
+                <select class="form-control" formControlName="carrera" name="carrera" id="carrera" aria-describedby="helpId">
+                    <option value="Administración de Empresas">Administración de Empresas</option>
+                    <option value="Contaduría Pública">Contaduría Pública</option>
+                    <option value="Ingeniería Civil">Ingeniería Civil</option>
+                    <option value="Psicología">Psicología</option>
+                    <option value="Derecho">Derecho</option>
+                    <option value="Medicina">Medicina</option>
+                    <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                    <option value="Comunicación Social y Periodismo">Comunicación Social y Periodismo</option>
+                    <option value="Ingeniería de Sistemas">Ingeniería de Sistemas</option>
+                    <option value="Enfermería">Enfermería</option>
+                    <option value="Economía">Economía</option>
+                    <option value="Arquitectura">Arquitectura</option>
+                    <option value="Diseño Gráfico">Diseño Gráfico</option>
+                    <option value="Educación">Educación</option>
+                    <option value="Ingeniería Electrónica">Ingeniería Electrónica</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="semestre" class="form-label">Semestre:</label>
+                <select class="form-control" formControlName="semestre" name="semestre" id="semestre" aria-describedby="helpId">
+                    <option value="Primero">Primero</option>
+                    <option value="Segundo">Segundo</option>
+                    <option value="Tercero">Tercero</option>
+                    <option value="Cuarto">Cuarto</option>
+                    <option value="Quinto">Quinto</option>
+                    <option value="Sexto">Sexto</option>
+                    <option value="Séptimo">Séptimo</option>
+                    <option value="Octavo">Octavo</option>
+                    <option value="Noveno">Noveno</option>
+                    <option value="Décimo">Décimo</option>
+                </select>
+            </div>
+ 
+            <div class="mb-3">
+                <label for="" class="form-label">Ciudad:</label>
+                <select class="form-control" formControlName="ciudad" name="ciudad" id="ciudad" aria-describedby="helpId">
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                    <option value="Pereira">Pereira</option>
+                    <option value="Villavicencio">Villavicencio</option>
+                    <option value="Ibagué">Ibagué</option>
+                    <option value="Cúcuta">Cúcuta</option>
+                </select>
+            </div>
+
+            <div class="btn-group" role="group" arial-label="">
+                <button type="submit" class="btn btn-success">Agregar</button> &nbsp;
+                <a href="listar-estudiante" type="button" class="btn btn-primary">Cancelar</a>
+            </div>
+
+        </form>
+    </div>
+    
+</div>
+

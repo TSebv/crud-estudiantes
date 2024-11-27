@@ -1,0 +1,44 @@
+<a href="agregar-estudiante" class="btn btn-success">Nuevo Estudiante</a>
+<br />
+<br />
+<div class="card">
+    <div class="card-header">
+        Estudiantes <br />
+    </div>
+
+    <div class="card-body">
+       <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Correo</th>
+                    <th>Carrera</th>
+                    <th>Semestre</th>
+                    <th>Ciudad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let estudiante of estudiantes; let iControl = index">
+                    <td scope="row">{{ estudiante.id }}</td>
+                    <td>{{ estudiante.nombre }}</td>
+                    <td>{{ estudiante.edad }}</td>
+                    <td>{{ estudiante.correo }}</td>
+                    <td>{{ estudiante.carrera }}</td>
+                    <td>{{ estudiante.semestre }}</td>
+                    <td>{{ estudiante.ciudad }}</td>
+                    <td>
+                        <a class="btn btn-warning" href="editar-estudiante/{{ estudiante.id }}">Editar</a>
+                        &nbsp;
+                        <a class="btn btn-danger" (click)="borrarRegistro(estudiante.id, iControl)">Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+       
+    </div>
+</div>
